@@ -19,6 +19,6 @@ export PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python
 export STREAMLIT_RUNONSSAVE=True
 
 
-streamlit run src/streamlit_app_blog.py --server.port 8787 --browser.serverAddress localhost --server.fileWatcherType none
+streamlit run src/streamlit_app.py --server.port 8787 --browser.serverAddress localhost --server.fileWatcherType none
 
 deactivate

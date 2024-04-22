@@ -4,13 +4,13 @@ from pathlib import Path
 from tempfile import NamedTemporaryFile
 import time
 import shutil
-from constants import *
+from params import *
 
 
 
 # Streamlit app code
 st.set_page_config(
-    page_title='Q&A Bot for PDF',
+    page_title='Q&A Bot',
     page_icon='🔖',
     layout='wide',
     initial_sidebar_state='auto',

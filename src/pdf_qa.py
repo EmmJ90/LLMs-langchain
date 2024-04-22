@@ -2,7 +2,7 @@ from langchain.document_loaders import PDFPlumberLoader
 from langchain.text_splitter import CharacterTextSplitter, TokenTextSplitter
 from transformers import pipeline
 from langchain.prompts import PromptTemplate
-from langchain.chat_models import ChatOpenAI
+# from langchain.chat_models import ChatOpenAI
 from langchain.vectorstores import Chroma
 from langchain.chains import RetrievalQA
 from langchain import HuggingFacePipeline
