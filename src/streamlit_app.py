@@ -1,5 +1,5 @@
 import streamlit as st
-from pdf_qa import PdfQA
+from qna import PdfQA
 from pathlib import Path
 from tempfile import NamedTemporaryFile
 import time
@@ -53,7 +53,7 @@ def load_emb(emb):
 
 
 
-st.title("PDF Q&A (Self hosted LLMs)")
+st.title("Q&A Bot")
 
 with st.sidebar:
     emb = st.radio("**Select Embedding Model**", [EMB_INSTRUCTOR_XL, EMB_SBERT_MPNET_BASE,EMB_SBERT_MINILM],index=1)
@@ -80,7 +80,7 @@ with st.sidebar:
                 st.session_state["pdf_qa_model"].vector_db_pdf()
                 st.sidebar.success("PDF uploaded successfully")
 
-question = st.text_input('Ask a question', 'What is this document?')
+question = st.text_input('Ask a question', 'What is Langchain?')
 
 if st.button("Answer"):
     try:
